@@ -55,7 +55,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **N/A**
+- **Object Oriented Programming in Ruby**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
