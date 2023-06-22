@@ -56,6 +56,9 @@
 ### Key Features <a name="key-features"></a>
 
 - **Object Oriented Programming in Ruby**
+- Add Books
+- Add People
+- Add Rentals
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
