@@ -8,7 +8,7 @@ class Main
   puts 'Welcome to School Library App!'
 
   # rubocop:disable Metrics/CyclomaticComplexity
-  def menu
+  def run_option
     loop do
       puts 'Please choose an option by entering a number:'
       puts '1 - List all books'
@@ -18,6 +18,7 @@ class Main
       puts '5 - Create a rental'
       puts '6 - List all rentals for a given person id'
       puts '7 - Exit'
+
       option = gets.chomp
 
       case option
@@ -34,7 +35,7 @@ class Main
       when '6'
         @app.list_rentals
       when '7'
-        puts 'Thank you ¯\^-^/¯'
+        puts 'Thank you for using our library ¯\^-^/¯'
         return
       else
         puts 'Please enter a number between 1 and 7'
@@ -45,4 +46,4 @@ class Main
 end
 
 main = Main.new
-main.menu
+main.run_option
