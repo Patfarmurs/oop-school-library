@@ -6,7 +6,7 @@ class Main
   end
 
   puts 'Welcome to School Library App!'
-# rubocop:disable Metrics/CyclomaticComplexity
+  # rubocop:disable Metrics/CyclomaticComplexity
   def run_option
     loop do
       display_menu_options
