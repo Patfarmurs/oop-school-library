@@ -6,26 +6,19 @@ class Main
   end
 
   puts 'Welcome to School Library App!'
-# rubocop:disable Metrics/CyclomaticComplexity
+  # rubocop:disable Metrics/CyclomaticComplexity
   def run_option
     loop do
       display_menu_options
-
       option = gets.chomp
 
       case option
-      when '1'
-        list_all_books
-      when '2'
-        list_all_people
-      when '3'
-        create_person
-      when '4'
-        create_book
-      when '5'
-        create_rental
-      when '6'
-        list_rentals
+      when '1' then list_all_books
+      when '2' then list_all_people
+      when '3' then create_person
+      when '4' then create_book
+      when '5' then create_rental
+      when '6' then list_rentals
       when '7'
         puts 'Thank you for using our library ¯\^-^/¯'
         return
@@ -35,6 +28,7 @@ class Main
     end
   end
 
+  # rubocop:enable Metrics/CyclomaticComplexity
   def display_menu_options
     puts 'Please choose an option by entering a number:'
     puts '1 - List all books'
@@ -69,7 +63,6 @@ class Main
   def list_rentals
     @app.list_rentals
   end
-  # rubocop:enable Metrics/CyclomaticComplexity
 end
 
 main = Main.new
