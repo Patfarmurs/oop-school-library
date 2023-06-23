@@ -41,6 +41,7 @@ class Main
       end
     end
   end
+  # rubocop:enable Metrics/CyclomaticComplexity
 end
 
 main = Main.new
