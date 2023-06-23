@@ -6,7 +6,7 @@ class Main
   end
 
   puts 'Welcome to School Library App!'
-
+# rubocop:disable Metrics/CyclomaticComplexity
   def run_option
     loop do
       display_menu_options
@@ -69,6 +69,7 @@ class Main
   def list_rentals
     @app.list_rentals
   end
+  # rubocop:enable Metrics/CyclomaticComplexity
 end
 
 main = Main.new
