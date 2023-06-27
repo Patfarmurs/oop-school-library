@@ -4,6 +4,7 @@ require './teacher'
 require './classroom'
 require './book'
 require './rental'
+require 'pry'
 
 class App
   def initialize
@@ -106,8 +107,12 @@ class App
     print 'Date: '
     date = gets.chomp
 
-    @rentals << Rental.new(date, @people[person_id], @books[book_id])
+    rented =  Rental.new(date, @people[person_id], @books[book_id])
+    @rentals << rented
     puts 'Rental created successfully'
+    binding.pry
+    #Introduicing a bug
+    @books[book_id].rented = true
   end
 
   def list_rentals
